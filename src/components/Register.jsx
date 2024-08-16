@@ -1,6 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import './Register.scss';
 
 function Register() {
+    const navigate = useNavigate();
+    document.addEventListener('keydown', (e) => {
+        if(e.key == 'h'){
+            navigate('/home');
+        }
+    })
+
   return (
     <div className="register sections">
         <div className="signup">
