@@ -1,6 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import './Home.scss'
 
 function Home() {
+  const navigate = useNavigate();
+    document.addEventListener('keydown', (e) => {
+        if(e.key == 'r'){
+            navigate('/');
+        }
+    })
   return (
     <>
     <div className="home sections">
@@ -139,49 +146,57 @@ function Home() {
               <i class="fa-solid fa-circle-info"></i>
             </div>
           </div>
-        </div>
-        <div className="message">
-          <div className="you">
-            <p>Salom dostim yaxshimisan</p>
-            <span>45 minute ago</span>
           </div>
-          <div className="me">
-            <p>Ha dostim ozingchi</p>
-            <span>45 minute ago</span>
+          <div className="message">
+            <div className="you">
+              <p>Salom dostim yaxshimisan</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="me">
+              <p>Ha dostim ozingchi</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="you">
+              <p>Yordaming kere</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="you">
+              <p>Kartaga pul tushurib chiqarish kere qiberasanmi orto</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="me">
+              <p>Ha mayli qachonga</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="you">
+              <p>Birar soatdan keyin</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="you">
+              <p>O'zim yozvoraman</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="me">
+              <p>Ok</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="me">
+              <p>Kartami tashemi</p>
+              <span>45 minute ago</span>
+            </div>
+            <div className="you">
+              <p>Ha, tashavor</p>
+              <span>45 minute ago</span>
+            </div>
           </div>
-          <div className="you">
-            <p>Yordaming kere</p>
-            <span>45 minute ago</span>
+          <div className="write">
+            <div className="file">
+              <input type="file" />
+              <i class="fa-solid fa-paperclip"></i>
+            </div>
+            <input type="text" placeholder='write here ...'/>
+            <i class="fa-solid fa-paper-plane"></i>
           </div>
-          <div className="you">
-            <p>Kartaga pul tushurib chiqarish kere qiberasanmi orto</p>
-            <span>45 minute ago</span>
-          </div>
-          <div className="me">
-            <p>Ha mayli qachonga</p>
-            <span>45 minute ago</span>
-          </div>
-          <div className="you">
-            <p>Birar soatdan keyin</p>
-            <span>45 minute ago</span>
-          </div>
-          <div className="you">
-            <p>O'zim yozvoraman</p>
-            <span>45 minute ago</span>
-          </div>
-          <div className="me">
-            <p>Ok</p>
-            <span>45 minute ago</span>
-          </div>
-          <div className="me">
-            <p>Kartami tashemi</p>
-            <span>45 minute ago</span>
-          </div>
-          <div className="you">
-            <p>Ha, tashavor</p>
-            <span>45 minute ago</span>
-          </div>
-        </div>
       </div>
       <div className="profile">
         <div className="informs">
